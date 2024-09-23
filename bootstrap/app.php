@@ -14,7 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
-            'http://project_management_api.test/*',
+            'http://project_management_services.test/*',
         ]);
 
         /*$middleware->statefulApi();
